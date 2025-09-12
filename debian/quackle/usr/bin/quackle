@@ -1,5 +1,0 @@
-#!/bin/bash
-# Quackle wrapper script to ensure it finds its data files
-export QUACKLE_DATA_PATH="/usr/share/quackle/data"
-cd /usr/share/quackle
-exec /usr/bin/quackle-bin "$@"
