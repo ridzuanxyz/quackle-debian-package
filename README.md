@@ -41,7 +41,7 @@ Quackle is a world-class crossword game artificial intelligence and analysis too
 ## Download
 
 ### Binary Package
-Download from [Releases](../../releases): `quackle_1.0.4-3_amd64.deb`
+Download from [Releases](https://github.com/ridzuanxyz/quackle-debian-package/releases/latest): `quackle_1.0.4-3_amd64.deb`
 
 ### File Verification (Recommended)
 Checksums are provided with each release for integrity verification:
