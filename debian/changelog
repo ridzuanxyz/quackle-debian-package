@@ -1,0 +1,23 @@
+quackle (1.0.4-3) unstable; urgency=medium
+
+  * Added custom Scrabble tile Q icon
+  * Improved desktop integration with proper icon support
+
+ -- Ridzuan Yusop <ridzuanxyz@gmail.com>  Thu, 12 Sep 2025 11:06:00 +0800
+
+quackle (1.0.4-2) unstable; urgency=medium
+
+  * Updated maintainer name to "Ridzuan Yusop"
+  * Added comprehensive man page
+  * Improved package documentation
+
+ -- Ridzuan Yusop <ridzuanxyz@gmail.com>  Thu, 11 Sep 2025 18:00:00 +0800 
+
+quackle (1.0.4-1) unstable; urgency=medium
+
+  * Initial package release (version 1.0.4)
+  * Built from upstream GitHub source
+  * Crossword game AI and analysis tool
+  * Includes critical bug fixes from 1.0.4.1 release
+
+ -- Ridzuan Yusop <ridzuanxyz@gmail.com>  Thu, 11 Sep 2025 15:50:19 +0800

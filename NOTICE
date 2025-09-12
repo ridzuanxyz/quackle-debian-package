@@ -1,0 +1,21 @@
+Quackle Debian Package
+Copyright (C) 2025 Ridzuan Yusop
+
+This package contains Quackle software originally developed by:
+- Jason Katz-Brown
+- John O'Laughlin  
+- John Fultz
+- Matt Liberty
+- And other contributors
+
+Original source: https://github.com/quackle/quackle
+Original license: GNU General Public License v2 or later
+
+PACKAGING NOTICE:
+- This package was created for distribution convenience only
+- No modifications were made to the original Quackle source code
+- All original copyright notices and license terms are preserved
+- The packaging scripts (debian/ directory) are also GPL-2+ licensed
+
+For the complete source code and original license terms, visit:
+https://github.com/quackle/quackle

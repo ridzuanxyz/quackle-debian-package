@@ -1,0 +1,20 @@
+# Quackle Package Checksums
+# Generated on: Jumaat 12 Sep 2025 04:35:01  +08
+
+## MD5
+291002c49ac3558033509eccfd364f52  quackle_1.0.4-3_amd64.deb
+
+## SHA256 (Recommended)
+d123a8ee1d1537a6626158b74dcc892d4616bcca39acbea4064e55ea64833bd8  quackle_1.0.4-3_amd64.deb
+
+## How to Verify
+
+### Using MD5:
+md5sum -c CHECKSUMS.md5
+
+### Using SHA256 (recommended):
+sha256sum -c CHECKSUMS.sha256
+
+### Manual verification:
+md5sum quackle_1.0.4-3_amd64.deb
+sha256sum quackle_1.0.4-3_amd64.deb

@@ -1,0 +1,53 @@
+#!/usr/bin/make -f
+
+# Uncomment this to turn on verbose mode.
+#export DH_VERBOSE=1
+
+%:
+	dh $@
+
+override_dh_auto_configure:
+	cd quacker && mkdir -p build && cd build && cmake -DCMAKE_INSTALL_PREFIX=/usr ..
+
+override_dh_auto_build:
+	cd quacker/build && $(MAKE)
+
+override_dh_auto_install:
+	# Create necessary directories
+	mkdir -p $(CURDIR)/debian/quackle/usr/bin
+	mkdir -p $(CURDIR)/debian/quackle/usr/share/applications
+	mkdir -p $(CURDIR)/debian/quackle/usr/share/quackle
+	mkdir -p $(CURDIR)/debian/quackle/usr/share/man/man1
+	mkdir -p $(CURDIR)/debian/quackle/usr/share/icons/hicolor/16x16/apps
+	mkdir -p $(CURDIR)/debian/quackle/usr/share/icons/hicolor/32x32/apps
+	mkdir -p $(CURDIR)/debian/quackle/usr/share/icons/hicolor/48x48/apps
+	mkdir -p $(CURDIR)/debian/quackle/usr/share/icons/hicolor/64x64/apps
+	mkdir -p $(CURDIR)/debian/quackle/usr/share/pixmaps
+	
+	# Install the real binary
+	cp quacker/build/Quackle $(CURDIR)/debian/quackle/usr/bin/quackle-bin
+	
+	# Install wrapper script
+	cp debian/quackle.wrapper $(CURDIR)/debian/quackle/usr/bin/quackle
+	chmod +x $(CURDIR)/debian/quackle/usr/bin/quackle
+	
+	# Install data files
+	cp -r data $(CURDIR)/debian/quackle/usr/share/quackle/
+	
+	# Install man page
+	cp debian/quackle.1 $(CURDIR)/debian/quackle/usr/share/man/man1/
+	
+	# Install desktop file
+	cp debian/quackle.desktop $(CURDIR)/debian/quackle/usr/share/applications/
+	
+	# Install icons
+	cp debian/icons/quackle-16.png $(CURDIR)/debian/quackle/usr/share/icons/hicolor/16x16/apps/quackle.png
+	cp debian/icons/quackle-32.png $(CURDIR)/debian/quackle/usr/share/icons/hicolor/32x32/apps/quackle.png
+	cp debian/icons/quackle-48.png $(CURDIR)/debian/quackle/usr/share/icons/hicolor/48x48/apps/quackle.png
+	cp debian/icons/quackle-64.png $(CURDIR)/debian/quackle/usr/share/icons/hicolor/64x64/apps/quackle.png
+	
+	# Install fallback icon in pixmaps
+	cp debian/quackle.png $(CURDIR)/debian/quackle/usr/share/pixmaps/quackle.png
+
+override_dh_auto_clean:
+	rm -rf quacker/build

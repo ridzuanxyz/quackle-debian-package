@@ -1,0 +1,68 @@
+.TH QUACKLE 1 "September 2025" "quackle 1.0.4" "Games"
+.SH NAME
+quackle \- crossword game artificial intelligence and analysis tool
+.SH SYNOPSIS
+.B quackle
+.SH DESCRIPTION
+Quackle is a world-class crossword game artificial intelligence and analysis tool 
+that rivals the best players in the world. It includes a move generator, simulator, 
+and Qt-based user interface and can be used with any board layout, alphabet, lexicon, 
+and tile distribution.
+
+The program features a sophisticated AI that can analyze crossword game positions, 
+suggest optimal moves, and simulate games to help players improve their strategy.
+
+.SH FEATURES
+.TP
+.B Move Generator
+Generates a list of the top moves for any given position, not just the single best move.
+.TP
+.B Game Simulator
+Runs simulations to analyze the probability of winning from different positions.
+.TP
+.B Multiple Lexicons
+Supports various dictionaries including CSW19, NWL18, TWL06, OSPS, and international 
+lexicons for different languages.
+.TP
+.B Multi-language Support
+Includes alphabets and lexicons for English, French, Greek, Korean, Turkish, Norwegian, 
+Polish, Russian, Swedish, and other languages.
+.TP
+.B Analysis Tools
+Provides detailed game analysis, endgame solving, and positional evaluation.
+
+.SH FILES
+.TP
+.B /usr/share/quackle/data/lexica/
+Dictionary files (.dawg format) for various lexicons
+.TP
+.B /usr/share/quackle/data/alphabets/
+Alphabet configuration files (.quackle_alphabet format)
+.TP
+.B /usr/share/quackle/data/strategy/
+Strategy and evaluation parameter files
+
+.SH ENVIRONMENT
+.TP
+.B QUACKLE_DATA_PATH
+If set, specifies an alternative path to the data directory
+
+.SH EXAMPLES
+.TP
+Start Quackle with the default interface:
+.B quackle
+
+.SH BUGS
+Report bugs at: https://github.com/quackle/quackle/issues
+
+.SH AUTHOR
+Quackle was created by Jason Katz-Brown and John O'Laughlin, with contributions 
+from John Fultz, Matt Liberty, and many others.
+
+This manual page was written by Ridzuan Yusop <ridzuanxyz@gmail.com>.
+
+.SH SEE ALSO
+.TP
+Project homepage: https://github.com/quackle/quackle
+.TP
+For more information about crossword game strategy and analysis.

@@ -1,0 +1,17 @@
+Package: quackle
+Version: 1.0.4-3
+Architecture: amd64
+Maintainer: Ridzuan Yusop <ridzuanxyz@gmail.com>
+Installed-Size: 85093
+Depends: libc6 (>= 2.34), libgcc-s1 (>= 3.3.1), libqt5core5a (>= 5.15.1), libqt5gui5 (>= 5.14.1) | libqt5gui5-gles (>= 5.14.1), libqt5widgets5 (>= 5.15.1), libstdc++6 (>= 12)
+Section: games
+Priority: optional
+Homepage: https://github.com/quackle/quackle
+Description: Crossword game artificial intelligence and analysis tool
+ Quackle is a crossword game artificial intelligence and analysis tool.
+ It provides automated game analysis, strategy development, and can serve
+ as a powerful AI opponent for crossword games like Scrabble.
+ .
+ The package includes the full Quackle UI written in Qt, along with
+ the core libquackle engine and quackleio library for game data
+ management and dictionary access.
