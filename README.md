@@ -47,11 +47,11 @@ Download from [Releases](https://github.com/ridzuanxyz/quackle-debian-package/re
 Checksums are provided with each release for integrity verification:
 
 ```bash
-# Verify SHA256 (recommended)
-sha256sum -c CHECKSUMS.txt
+# For SHA256 verification:
+sha256sum -c CHECKSUMS.sha256
 
-# Or verify manually
-sha256sum quackle_1.0.4-3_amd64.deb
+# For MD5 verification:
+md5sum -c CHECKSUMS.md5
 ```
 
 ## Installation
